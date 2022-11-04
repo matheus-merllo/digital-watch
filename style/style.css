@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Electrolize&display=swap');
+
+:root{
+    --dark: #282735;
+    --light: #daddcd;
+    --background:linear-gradient(25deg, #0a0b32, #190a32f8, #0a3232);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Electrolize', sans-serif;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--background);
+}
+
+#date-container{
+    position: absolute;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 120px;
+    height: 30px;
+    margin-bottom: 200px;
+    margin-right: 300px;
+    border-radius: 3px 3px 0 0;
+    box-shadow:0px -1px 2px rgba(0, 0, 0, 0.4);
+}
+
+#day{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--dark);
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.5);
+    border-radius: 2px;
+    width: 115px;
+    height: 25px;
+    font-size: 18px;   
+    color: var(--light);
+}
+
+#cat{
+    position: absolute;
+    bottom: 169px;
+    left: 250px;
+}
+
+#time-container{
+    position: relative;
+    width: 450px;
+    height: 170px;
+    border-radius: 5px;
+    background: transparent;
+    box-shadow: 1px 5px 10px rgba(0, 0, 0, 0.9);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.time{
+    background-color: var(--dark);
+    width: 135px;
+    height: 160px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+    color: var(--light);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 5em;
+}
+
+.text{
+    text-transform: uppercase;
+    font-size: 8px;
+}
+
+.chain{
+    position: absolute;
+    top: 176px;
+    left: 30px;
+    transform: rotate(90deg);
+    z-index: -1;
+    opacity: 0.8;
+}
+
+.chain2{
+    left: 390px;
+}
+
+#weekday-container{
+    position: absolute;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 450px;
+    height: 70px;
+    margin-top: 291px;
+    border-radius: 5px;
+    box-shadow: 1px 0px 10px rgba(0, 0, 0, 0.9);
+}
+
+#weekday{
+    background-color: var(--dark);
+    width: 435px;
+    height: 60px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+    color: var(--light);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.5em;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
